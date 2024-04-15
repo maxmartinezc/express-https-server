@@ -1,0 +1,26 @@
+{
+  "name": "express-https-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "ts-node-dev --respawn ./src/app.ts",
+    "start:https": "ENABLE_HTTPS=true npm start"
+  },
+  "author": "Max Martinez (https://maxmartinez.dev/)",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "office-addin-dev-certs": "^1.12.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.5",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.4"
+  }
+}
